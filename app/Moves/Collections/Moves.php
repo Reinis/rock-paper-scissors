@@ -2,11 +2,13 @@
 
 namespace RPS\Moves\Collections;
 
+use ArrayIterator;
 use Countable;
 use InvalidArgumentException;
+use IteratorAggregate;
 use RPS\Moves\Move;
 
-class Moves implements Countable
+class Moves implements Countable, IteratorAggregate
 {
     /**
      * @var Move[]
@@ -45,5 +47,13 @@ class Moves implements Countable
         $key = array_rand($this->moves);
 
         return $this->moves[$key];
+    }
+
+    /**
+     * @return ArrayIterator|Move[]
+     */
+    public function getIterator(): ArrayIterator
+    {
+        return new ArrayIterator($this->moves);
     }
 }
