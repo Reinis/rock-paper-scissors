@@ -1,0 +1,19 @@
+{
+  "name": "reinis/rock-paper-scissors",
+  "description": "Rock Paper Scissors game",
+  "authors": [
+    {
+      "name": "Reinis Danne",
+      "email": "rei4dan@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "RPS\\": "app/"
+    }
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "phpunit/phpunit": "^9"
+  }
+}
