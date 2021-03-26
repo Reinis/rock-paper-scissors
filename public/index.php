@@ -20,6 +20,9 @@ $moves = new Moves(
 $game = new Game($moves);
 $view = new View();
 
+$view->header();
+$view->home();
+
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 $uri = $_SERVER['REQUEST_URI'];
 
@@ -41,4 +44,4 @@ if ($uri === '/' && $httpMethod === 'POST') {
     $view->result($game, $winner);
 }
 
-$view->home();
+$view->footer();

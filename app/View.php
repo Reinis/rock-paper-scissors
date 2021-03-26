@@ -4,6 +4,16 @@ namespace RPS;
 
 class View
 {
+    public function header(): void
+    {
+        require_once __DIR__ . '/Views/header.php';
+    }
+
+    public function footer(): void
+    {
+        require_once __DIR__ . '/Views/footer.php';
+    }
+
     public function home(): void
     {
         require_once __DIR__ . '/Views/home.php';
