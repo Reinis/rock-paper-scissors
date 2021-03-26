@@ -14,7 +14,7 @@ class View
         require_once __DIR__ . '/Views/footer.php';
     }
 
-    public function home(): void
+    public function home(Game $game): void
     {
         require_once __DIR__ . '/Views/home.php';
     }

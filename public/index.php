@@ -21,7 +21,7 @@ $game = new Game($moves);
 $view = new View();
 
 $view->header();
-$view->home();
+$view->home($game);
 
 $httpMethod = $_SERVER['REQUEST_METHOD'];
 $uri = $_SERVER['REQUEST_URI'];
