@@ -37,6 +37,7 @@ if ($uri === '/' && $httpMethod === 'POST') {
 
     if ($move === 'none') {
         $view->error();
+        $view->footer();
         die();
     }
 
